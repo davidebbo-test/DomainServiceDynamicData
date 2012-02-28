@@ -42,6 +42,9 @@
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel.DomainServices.EntityFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.ServiceModel.DomainServices.Hosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.DomainServices.Server, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web.Abstractions" />
@@ -76,11 +79,13 @@
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Site.css" />
     <Content Include="Site.master" />
+    <Compile Include="Northwind.cs" />
     <Compile Include="Northwind.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Northwind.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Northwind.metadata.cs" />
     <Compile Include="Site.master.cs">
       <DependentUpon>Site.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
