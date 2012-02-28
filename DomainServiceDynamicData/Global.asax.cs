@@ -28,7 +28,9 @@ namespace DomainServiceDynamicData
             // [ScaffoldTable(true)] attribute to the partial class.
             // Note: Make sure that you change "YourDomainServiceType" to the name of the data context
             // class in your application.
-            //DefaultModel.RegisterContext(new DomainModelProvider(typeof(YourDomainServiceType)), new ContextConfiguration() { ScaffoldAllTables = false });
+            DefaultModel.RegisterContext(
+                new DomainModelProvider(typeof(Northwind)),
+                new ContextConfiguration() { ScaffoldAllTables = true });
 
             // The following statement supports separate-page mode, where the List, Detail, Insert, and 
             // Update tasks are performed by using separate pages. To enable this mode, uncomment the following 
