@@ -6,6 +6,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <asp:ScriptManagerProxy ID="ScriptManagerProxy1" runat="server" />
 
+    <asp:LoginView ID="LoginView1" runat="server">
+        <AnonymousTemplate>
+            [ <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Log In" /> ]
+        </AnonymousTemplate>
+        <LoggedInTemplate>
+            Welcome <b><asp:LoginName ID="LoginName2" runat="server" /></b>! [ <asp:LoginStatus ID="LoginStatus2" runat="server" LogoutText="Log Out" /> ]
+        </LoggedInTemplate>
+    </asp:LoginView>
+
     <h2 class="DDSubHeader">My tables</h2>
 
     <br /><br />

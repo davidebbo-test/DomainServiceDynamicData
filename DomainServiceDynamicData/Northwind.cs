@@ -47,6 +47,7 @@ namespace DomainServiceDynamicData
             this.ObjectContext.Categories.AttachAsModified(currentCategory, this.ChangeSet.GetOriginal(currentCategory));
         }
 
+        [RequiresAuthentication]
         public void DeleteCategory(Category category)
         {
             if ((category.EntityState != EntityState.Detached))
