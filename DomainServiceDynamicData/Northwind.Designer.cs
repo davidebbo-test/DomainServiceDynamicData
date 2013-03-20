@@ -8,12 +8,13 @@
 //------------------------------------------------------------------------------
 
 using System;
+using System.ComponentModel;
+using System.Data.EntityClient;
 using System.Data.Objects;
 using System.Data.Objects.DataClasses;
-using System.Data.EntityClient;
-using System.ComponentModel;
-using System.Xml.Serialization;
+using System.Linq;
 using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 [assembly: EdmSchemaAttribute()]
 #region EDM Relationship Metadata
@@ -290,6 +291,7 @@ namespace DomainServiceDynamicData
         private ObjectSet<CustomerAddress> _CustomerAddresses;
 
         #endregion
+
         #region AddTo Methods
     
         /// <summary>
@@ -397,11 +399,11 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
     }
-    
 
     #endregion
-    
+
     #region Entities
     
     /// <summary>
@@ -428,6 +430,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -530,6 +533,7 @@ namespace DomainServiceDynamicData
         partial void OnPictureChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -556,6 +560,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -582,6 +587,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -852,6 +858,7 @@ namespace DomainServiceDynamicData
         partial void OnFaxChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -900,6 +907,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -926,6 +934,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1028,6 +1037,7 @@ namespace DomainServiceDynamicData
         partial void OnContactTitleChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -1070,6 +1080,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -1094,6 +1105,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1292,6 +1304,7 @@ namespace DomainServiceDynamicData
         partial void OnFaxChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -1334,6 +1347,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -1358,6 +1372,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1412,6 +1427,7 @@ namespace DomainServiceDynamicData
         partial void OnCustomerDescChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -1438,6 +1454,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -1466,6 +1483,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1952,6 +1970,7 @@ namespace DomainServiceDynamicData
         partial void OnEmailAddressChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -2060,6 +2079,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -2084,6 +2104,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -2474,6 +2495,7 @@ namespace DomainServiceDynamicData
         partial void OnSubmittedDateChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -2614,6 +2636,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -2646,6 +2669,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -2775,6 +2799,7 @@ namespace DomainServiceDynamicData
         partial void OnDiscountChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -2855,6 +2880,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -2883,6 +2909,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -3129,6 +3156,7 @@ namespace DomainServiceDynamicData
         partial void OnDiscontinuedChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -3231,6 +3259,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -3257,6 +3286,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -3311,6 +3341,7 @@ namespace DomainServiceDynamicData
         partial void OnRegionDescriptionChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -3337,6 +3368,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -3363,6 +3395,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -3441,6 +3474,7 @@ namespace DomainServiceDynamicData
         partial void OnPhoneChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -3467,6 +3501,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -3493,6 +3528,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -3787,6 +3823,7 @@ namespace DomainServiceDynamicData
         partial void OnHomePageChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -3813,6 +3850,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -3841,6 +3879,7 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -3919,6 +3958,7 @@ namespace DomainServiceDynamicData
         partial void OnRegionIDChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -3983,8 +4023,10 @@ namespace DomainServiceDynamicData
         }
 
         #endregion
+
     }
 
     #endregion
+
     
 }

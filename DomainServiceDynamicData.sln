@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainServiceDynamicData", "DomainServiceDynamicData\DomainServiceDynamicData.csproj", "{AF0F453C-4C3F-4CB1-9F00-4BEAD5E3D35F}"
 EndProject
 Global
